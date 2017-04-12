@@ -1,0 +1,4 @@
+FSharp.Core
+Microsoft.AspNet.WebApi.Client
+Microsoft.AspNet.WebApi.Core
+FSharp.Compiler.Service

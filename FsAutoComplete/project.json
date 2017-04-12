@@ -1,0 +1,9 @@
+{
+  "frameworks": {
+    "net46":{
+      "dependencies": {
+        "FSharp.Compiler.Service": "11.0.9"
+      }
+    }
+   }
+}

@@ -1,0 +1,17 @@
+{
+    "scriptFile": "FsAutoComplete.Functions.dll",
+    "entryPoint": "Functions.Run",
+    "bindings": [
+        {
+            "type": "httpTrigger",
+            "direction": "in",
+            "authLevel": "function",
+            "name": "req"
+        },
+        {
+            "type": "http",
+            "direction": "out",
+            "name": "res"
+        }
+    ]
+}

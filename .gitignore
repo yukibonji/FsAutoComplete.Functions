@@ -1,0 +1,7 @@
+.fake
+paket.exe
+packages
+paket-files
+bin
+obj
+*.dll
