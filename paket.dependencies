@@ -1,13 +1,13 @@
 source https://www.nuget.org/api/v2
 framework: net46
 
-nuget FSharp.Core redirects: force
+nuget FSharp.Core 4.0.0.1 redirects: force
 nuget Microsoft.AspNet.WebApi.Client
 nuget Microsoft.AspNet.WebApi.Core
 nuget FAKE
 nuget Newtonsoft.Json  redirects: force
-nuget FSharp.Compiler.Service 11.0.9
+nuget FSharp.Compiler.Service 9.0.1
 
 
-git https://github.com/Ionide/FsAutoComplete.git functions build:"build.cmd FunctionsRelease", OS: windows
-git https://github.com/Ionide/FsAutoComplete.git functions build:"build.sh FunctionsRelease", OS: mono
+git https://github.com/Ionide/FsAutoComplete.git functions9 build:"build.cmd FunctionsRelease", OS: windows
+git https://github.com/Ionide/FsAutoComplete.git functions9 build:"build.sh FunctionsRelease", OS: mono
