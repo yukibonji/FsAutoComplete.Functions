@@ -117,10 +117,10 @@ let Run (req: HttpRequestMessage) =
                 | "typesig" -> typesig request.content request.line request.column |> serialize
                 | "symbolUse" -> symbolUse request.content request.line request.column |> serialize
                 | "help" -> help request.content request.line request.column |> serialize
-                | "findDeclarations" -> findDeclarations request.content request.line request.column |> serialize
+                | "findDeclaration" -> findDeclarations request.content request.line request.column |> serialize
                 | "methods" -> methods request.content request.line request.column |> serialize
-                | _ -> async.Return ""
+                | _ -> async.Return "method_not_found"
             return req.CreateResponse(Net.HttpStatusCode.OK, res, "application/json")
         with
-        | _ -> return req.CreateResponse(Net.HttpStatusCode.OK, "error", "application/json")
+        | ex -> return req.CreateResponse(Net.HttpStatusCode.OK, ex.Message + "\n\n\n" + ex.StackTrace, "application/json")
     } |> Async.StartAsTask

@@ -16,9 +16,9 @@ NUGET
       System.Collections.Immutable (>= 1.3.1)
 GIT
   remote: https://github.com/Ionide/FsAutoComplete.git
-     (bdf23cc13cf9e86f437b73ee606c8185ac46ad89)
+     (6ed42369f2e48ddf7a96c1742897b92e15b42290)
       build: build.cmd FunctionsRelease
       os: windows
-     (bdf23cc13cf9e86f437b73ee606c8185ac46ad89)
+     (6ed42369f2e48ddf7a96c1742897b92e15b42290)
       build: build.sh FunctionsRelease
       os: mono
