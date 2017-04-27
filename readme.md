@@ -6,4 +6,4 @@ It's using simplified version of FSAC (stateless, supporting only script files) 
 
 1. Clone
 2. `build.cmd` / `build.sh`
-3. Start using Functions CLI `funs run FsAutoComplete`
+3. Start using Functions CLI `func host start --cors http://localhost:8888` (setting CORS is important)
